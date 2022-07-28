@@ -13,7 +13,7 @@ class ListsController < ApplicationController
     if @list.save
     # redirect_to '/top' を削除して、以下コードに変更
     # 詳細画面へリダイレクト
-      redirect_to list_path(list.id)
+      redirect_to list_path(@list.id)
     else
       render:new
     end
