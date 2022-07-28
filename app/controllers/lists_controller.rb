@@ -15,7 +15,7 @@ class ListsController < ApplicationController
     # 詳細画面へリダイレクト
       redirect_to list_path(list.id)
     else
-      render:new
+      render:ne
     end
   end
 
